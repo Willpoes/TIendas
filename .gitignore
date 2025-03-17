@@ -1,0 +1,46 @@
+# ########################
+# gitignore con dire3ctories carpetas
+# /carpeta-a-ignorar/
+#/[Tt]emp/    -> Ignora "Temp/" y "temp/"
+#/[Ll]ibrary/
+#/[Uu]ser[Ss]ettings/ -> Ignora "temp Settings/" y "user settings/"
+# ########################
+# Visual Studio cache directory and files
+#.vs/
+#*.tmp
+#*.user
+#*.apk
+
+# ########################
+# Ignorar todo
+#*
+# No ignorar sol la carpeta "Micarpeta", pero lo demas si
+# el orden es ignorar todos y luuego no Micarpeta
+#!/Micarpeta/
+
+!/public/
+!/private/
+
+
+*.sql
+*.jpg
+*.jpeg
+*.png
+*.xlsx
+*.zip
+*.mp4
+
+/apk/
+/Chase Clean/
+/consultas/
+/css/
+/fonts/
+/img/
+/js/
+/KNYGHT/
+/languages/
+/processing/
+/re/
+/sitassumenda/
+/updateonene/
+/vender/

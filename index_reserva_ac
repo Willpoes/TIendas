@@ -1,0 +1,23 @@
+<?php
+session_start();
+include "configuration.php"
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Aplicacion de gamarra para vender todo tipo de ropa y textil.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+        <script type="text/javascript">
+   window.location.href = "http://solucionesapps.com/";
+</script>
+
+
+         
+    </body>
+
+</html>
