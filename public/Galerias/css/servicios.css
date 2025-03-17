@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Añadir margen inferior */
+}
+
+.search-container input {
+    padding: 10px;
+    width: 35%; /* Ajusta el ancho de la barra de búsqueda */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 20px; /* Aumenta el margen entre la barra de búsqueda y el botón */
+}
+
+.add-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.add-button i {
+    margin-right: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.acciones button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.acciones button:hover {
+    color: #0056b3;
+}
+
+/* Estilos para el modal */
+  /* Estilos para el modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Ajusta el margen para centrar verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Reduce el ancho del modal */
+    border-radius: 10px; /* Añade bordes redondeados */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Añade sombra */
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content h2 {
+    font-size: 18px; /* Reduce el tamaño del título */
+}
+.modal-content p {
+    font-size: 14px; /* Reduce el tamaño del texto */
+    margin: 5px 0; /* Ajusta el margen del texto */
+}
+.modal-content img {
+    max-width: 100%; /* Asegura que la imagen se ajuste al ancho del modal */
+    height: auto;
+}
+
+.acciones button.ver {
+    color: green;
+}
+.acciones button.editar {
+    color: orange;
+}
+.acciones button.eliminar {
+    color: red;
+}
+.acciones button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.acciones button:hover {
+    color: #0056b3;
+}
+
+    /* Estilos para las notificaciones */
+    .notification-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    .notification {
+        background-color: #4caf50; /* Color verde para éxito */
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    .notification.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .notification.error {
+        background-color: #f44336; /* Color rojo para error */
+    }
